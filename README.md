@@ -1,6 +1,6 @@
 # Me - Backend
 
-This project is made to serve my website: http://douglascarvalho.netlify.app/
+This project is made to provide information to my website: http://douglascarvalho.netlify.app/
 
 ### Tech
 
