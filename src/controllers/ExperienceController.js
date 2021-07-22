@@ -4,7 +4,16 @@ const Experiences = mongoose.model('Experiences');
 module.exports = {
   async index(req, res) {
     const { page = 1 } = req.query;
-    const experiences = await Experiences.find().sort({ endsAt: -1 }).limit(10);
+    const experiences = await Experiences.paginate(
+      {},
+      {
+        page,
+        limit: 10,
+        sort: {
+          endsAt: -1,
+        },
+      },
+    );
 
     return res.json(experiences);
   },
