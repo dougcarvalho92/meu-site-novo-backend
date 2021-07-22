@@ -9,9 +9,6 @@ module.exports = {
       {
         page,
         limit: 10,
-        sort: {
-          endsAt: -1,
-        },
       },
     );
 
